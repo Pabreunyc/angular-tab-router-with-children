@@ -5,6 +5,7 @@
 <nav mat-tab-nav-bar>
   <a mat-tab-link
   *ngFor="let link of navLinks"
+  (selectFocusedIndex)="onSelectFocusedIndex($event)"
   [routerLink]="link.link"
   routerLinkActive #rla="routerLinkActive"
   [active]="rla.isActive">

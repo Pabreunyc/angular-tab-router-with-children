@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 
 import { 
   MatButtonModule,
+  MatIconModule,
   MatTabsModule,
   MatToolbarModule
 } from '@angular/material';
@@ -9,6 +10,7 @@ import {
 @NgModule({
   imports: [
     MatButtonModule,
+    MatIconModule,
     MatTabsModule,
     MatToolbarModule
   ],

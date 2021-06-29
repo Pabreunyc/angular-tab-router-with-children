@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule,
+  Routes,
+  CanDeactivate,
+  ActivatedRouteSnapshot,
+  RouterStateSnapshot
+} from '@angular/router';
+import { NoteGuard } from '../_guards/note.guard';
+import { UnsavedChangesGuard } from '../_guards/unsaved-changes.guard';
 
-// import { NoteComponent } from './note.component';
 
 import {
   NoteComponent,
@@ -24,6 +30,7 @@ const routes: Routes = [
       {
         path: 'list',
         component: NoteListComponent,
+        canActivate: [NoteGuard],
         data:
         {
           title: 'List',
@@ -32,6 +39,7 @@ const routes: Routes = [
       {
         path: 'edit',
         component: NoteEditComponent,
+        canDeactivate: [UnsavedChangesGuard],
         data:
         {
           title: 'Edit',

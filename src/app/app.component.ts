@@ -9,6 +9,8 @@ export class AppComponent {
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    console.log('%cAppComponent.init', 'background-color:purple;color:white;');
+  }
 
 }

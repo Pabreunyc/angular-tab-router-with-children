@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material.module';
 
 import { HomeModule } from './home/home.module';
+import { HelpdeskModule } from './helpdesk/helpdesk.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -15,7 +16,8 @@ import { HomeModule } from './home/home.module';
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
-    HomeModule
+    HomeModule,
+    HelpdeskModule
   ],
   providers: [],
   bootstrap: [AppComponent]

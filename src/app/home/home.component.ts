@@ -31,13 +31,13 @@ export class HomeComponent implements OnInit, OnDestroy
     this.activeLinkIndex = 0;
   }
   ngOnInit(): void {
-    console.log('%cHomeComponent.init', 'background-color:green;color:white;')
+    console.log('%cHomeComponent', 'background-color:green;color:white;')
     this.router.events.subscribe((res) => {
         this.activeLinkIndex = this.navLinks.indexOf(this.navLinks.find(tab => tab.link === '.' + this.router.url));
     });
   }
   ngOnDestroy(): void {
-    console.log('%cHomeComponent.init', 'background-color:red;color:white;')
+    console.log('%cHomeComponent', 'background-color:red;color:white;')
   }
 
  /// =========================================================================

@@ -7,7 +7,11 @@ import { MaterialModule } from '../material.module';
 import { HOME_ROUTE, HomeComponent } from './';
 
 @NgModule({
-  imports: [CommonModule, MaterialModule, RouterModule.forChild([HOME_ROUTE])],
+  imports: [
+    CommonModule,
+    MaterialModule,
+    RouterModule.forChild([HOME_ROUTE])
+  ],
   declarations: [HomeComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

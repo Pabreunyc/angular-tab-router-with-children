@@ -7,9 +7,13 @@ import { HelpdeskComponent } from './helpdesk/helpdesk.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: '',    
     component: HelpdeskComponent,
     children: [
+      {
+        path: '',
+        redirectTo: 'listing'
+      },
       {
         path: 'listing',
         component: HelpdeskListingComponent

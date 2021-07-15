@@ -1,0 +1,10 @@
+table {
+    background-color: darkgrey;
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 98%;
+}
+table tr {
+   border:1px solid darkgray;
+}
+

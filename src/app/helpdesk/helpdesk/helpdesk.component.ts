@@ -23,6 +23,8 @@ public selectedTabIndex = null;
   ngOnInit() {
     console.log('%cHelpdeskComponent', 'background-color:green;color:white');
     console.log(this.router.url);
+    console.log(window.history.state);
+    const { redirect } = window.history.state;
   }
   ngOnDestroy() {
     console.log('%cHelpdeskComponent', 'background-color:red;color:white');

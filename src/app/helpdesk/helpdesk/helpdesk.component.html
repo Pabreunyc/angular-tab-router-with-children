@@ -1,15 +1,16 @@
-<nav mat-tab-nav-bar>
-    <a mat-tab-link
-        routerLink="listing"
-        routerLinkActive #rla="routerLinkActive"
-        [active]="rla.isActive">
-        Inbox
-    </a>
-    <a mat-tab-link
-        routerLink="details"
-        routerLinkActive #rla="routerLinkActive"
-        [active]="rla.isActive">
-        Details
-    </a>
-</nav>
-<router-outlet></router-outlet>
+<main style="border:1px solid crimson;width:96%;margin:0 auto;">
+    <nav mat-tab-nav-bar>
+        <a mat-tab-link
+            routerLink="listing"
+            routerLinkActive="isActive">
+            Inbox            
+        </a>
+
+        <a mat-tab-link
+            routerLink="details"
+            routerLinkActive="isActive">
+            Details            
+        </a>
+    </nav>
+    <router-outlet></router-outlet>
+</main>
